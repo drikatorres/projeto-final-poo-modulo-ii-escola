@@ -1,11 +1,13 @@
+package Modelo;
+
 public class Endereco {
     private String rua;
-    private String numero;
+    private int numero;
     private String cep;
     private String bairro;
-    private String estado; //apenas poder ser Minas Gerais
+    private String estado;
 
-    public Endereco(String rua, String numero, String cep, String bairro, String estado) {
+    public Endereco(String rua, int numero, String cep, String bairro, String estado) {
         this.rua = rua;
         this.numero = numero;
         this.cep = cep;
@@ -23,11 +25,11 @@ public class Endereco {
         this.rua = rua;
     }
 
-    public String getNumero() {
+    public int getNumero() {
         return numero;
     }
 
-    public void setNumero(String numero) {
+    public void setNumero(int numero) {
         this.numero = numero;
     }
 
@@ -52,10 +54,20 @@ public class Endereco {
     }
 
     public void setEstado(String estado) {
-        if (estado.equals("Rio de Janeiro")) {
+        if (estado.equals("MG") || estado.equals("Minas Gerais")) {
             this.estado = estado;
         } else {
-            System.out.println("O estado não pode ser diferente do Rio de Janeiro, pois a escola se localiza no RJ!");
+            System.out.println("O estado não pode ser diferente de Minas Gerais, pois a escola se localiza em Minas Gerais!");
         }
+    }
+
+    @Override
+    public String toString() {
+        return "\nEndereco: " +
+                "\nRua:" + rua +
+                "\nNúmero: " + numero +
+                "\nCep: " + cep +
+                "\nBairro: " + bairro +
+                "\nEstado: " + estado;
     }
 }

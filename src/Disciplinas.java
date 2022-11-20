@@ -1,2 +1,9 @@
-package PACKAGE_NAME;public enum Disciplinas {
+public enum Disciplinas {
+    PORTUGUES,
+    MATEMATICA,
+    CIENCIAS,
+    ARTES,
+    EDUCACAO_FISICA,
+    INGLES,
+    ESPANHOL;
 }

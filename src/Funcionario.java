@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface Funcionario {
+public interface Funcionario {
+    public Double consultarSalario(Funcionario funcionario);
+    public void pedirDesligamento(Funcionario funcionario);
 }

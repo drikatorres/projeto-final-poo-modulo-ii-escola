@@ -1,3 +1,5 @@
+package Modelo;
+
 public abstract class Pessoa {
     private String nome;
     private int idade;
@@ -53,5 +55,14 @@ public abstract class Pessoa {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    @Override
+    public String toString() {
+        return  "\nNome: " + nome +
+                "\nIdade: " + idade +
+                "\nRg: " + rg +
+                "\nCpf: " + cpf +
+                "\nEndereco: " + endereco;
     }
 }

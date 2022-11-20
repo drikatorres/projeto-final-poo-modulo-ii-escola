@@ -1,11 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="70e55c06-8a3e-4522-8b4f-e62eacd3a226" name="Changes" comment="" />
+    <list default="true" id="70e55c06-8a3e-4522-8b4f-e62eacd3a226" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cadastro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cadastro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Disciplinas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Disciplinas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Escola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Escola.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Funcionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Funcionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FuncoesFuncionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FuncoesFuncionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modelo/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaiOuResponsavel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaiOuResponsavel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RH.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RH.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Secretaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Secretaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TodosCadastros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TodosCadastros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tutor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HhUHrOZjEegrYLUGnVaZC9dVpH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -17,9 +51,41 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="teste" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Escola">
+    <configuration name="Escola" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Escola" />
+      <module name="projeto-final-poo-modulo-ii-escola" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TesteEscola" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="teste.TesteEscola" />
+      <module name="projeto-final-poo-modulo-ii-escola" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Escola" />
+        <item itemvalue="Application.TesteEscola" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -28,8 +94,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668736725771</updated>
+      <workItem from="1668736727571" duration="18809000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
