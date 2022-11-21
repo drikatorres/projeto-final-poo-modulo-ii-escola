@@ -25,21 +25,21 @@ public class Secretaria implements FuncoesFuncionario {
 
     @Override
     public void darAdvertencia(Aluno aluno) {
-        System.out.println("O aluno " + aluno.getNome() + " está recebendo advertência!");
+        System.out.println("O(a) aluno(a) " + aluno.getNome() + " está recebendo advertência!");
     }
 
-    public void ligarPai(Aluno aluno, PaiOuResponsavel paiOuResponsavel) {
-        System.out.println("Ligando para o pai ou responsável do aluno " + aluno.getNome());
-        System.out.println("Estamos ligando para " + aluno.getPaiOuResponsavel());
-        System.out.println("Ligando para o número " + paiOuResponsavel.getNumeroTelefone());
+    public void ligarPaiOuResposanvel(Aluno aluno) {
+        System.out.println("Ligando para o pai ou responsável do(a) aluno(a) " + aluno.getNome());
+        System.out.println("Estamos ligando para " + aluno.getPaiOuResponsavel().getNome());
+        System.out.println("Ligando para o número " + aluno.getPaiOuResponsavel().getNumeroTelefone());
     }
 
     public void emitirDiploma (Aluno aluno) {
         if (aluno.isAprovado() ==  true ) {
-            System.out.println("O diploma do aluno " + aluno.getNome() + " foi emitido e agora o mesmo encontra-se formado.");
+            System.out.println("O diploma do(a) aluno(a) " + aluno.getNome() + " foi emitido e agora o(a) mesmo(a) encontra-se formado(a).");
             aluno.setFormado(true);
         } else {
-            System.out.println("O aluno não foi aprovado, por isso não poderá se formar.");
+            System.out.println("O(a) aluno(a) "+ aluno.getNome() + " não foi aprovado(a), por isso não poderá se formar.");
         }
 
     }

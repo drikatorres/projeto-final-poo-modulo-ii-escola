@@ -30,7 +30,7 @@ public class PaiOuResponsavel extends Pessoa {
     @Override
     public String toString() {
         return  super.toString() +
-                "Profissão: " + profissao +
-                "Telefone " + numeroTelefone;
+                "\nProfissão: " + profissao +
+                "\nTelefone " + numeroTelefone;
     }
 }

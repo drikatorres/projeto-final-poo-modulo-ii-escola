@@ -64,7 +64,7 @@ public class Aluno extends Pessoa {
                 "\nAluno: " +
                 "\nMatrícula: " + matricula +
                 "\nNota:" + nota +
-                "\nPai ou responsável:" + paiOuResponsavel +
+                "\nPai ou responsável:" + paiOuResponsavel.getNome() +
                 "\nAprovado:" + aprovado +
                 "\nFormado:" + formado;
     }

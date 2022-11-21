@@ -24,31 +24,44 @@ public class Tutor extends Pessoa implements FuncoesFuncionario, Funcionario {
 
     @Override
     public void darAdvertencia(Aluno aluno) {
-
+        System.out.println("Aluno " + aluno.getNome() + " recebeu uma advertência.");
     }
 
     @Override
     public void lancarNota(Aluno aluno, Double nota) {
-
+        aluno.setNota(nota);
     }
 
     @Override
     public void aprovarAluno(Aluno aluno) {
-
+        if (aluno.getNota() >= 7 ) {
+            aluno.setAprovado(true);
+        } else {
+            aluno.setAprovado(false);
+            System.out.println("O aluno não foi aprovado e terá que ir para a recuperação");
+        }
     }
 
     public void ajudarAluno(Aluno aluno) {
-        System.out.println("Marcando monitoria com o aluno " + aluno.getNome() + " para " + dataHoraAtual);
+        System.out.println("Marcando monitoria com o(a) aluno(a) " + aluno.getNome() + " para " + dataHoraAtual);
     }
 
     @Override
-    public Double consultarSalario(Funcionario funcionario) {
-        return this.salario;
+    public void consultarSalario(Funcionario funcionario) {
+        System.out.println("O salário do(a) funcionário(a) " + this.getNome() +" é R$" + this.getSalario());
     }
 
     @Override
     public void pedirDesligamento(Funcionario funcionario) {
-        System.out.println("Eu, tutor, " + this.getNome() + "estou pedindo desligamento da escola.");
+        System.out.println("Eu, tutor, " + this.getNome() + ", estou pedindo desligamento da escola.");
         RH.tutoresContratados.remove(funcionario);
+        this.setSalario(0.0);
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "\nFunção: Tutor" +
+                "\nSalário: " + salario;
     }
 }
