@@ -60,9 +60,6 @@ public abstract class Pessoa {
     @Override
     public String toString() {
         return  "\nNome: " + nome +
-                "\nIdade: " + idade /* +
-                "\nRg: " + rg +
-                "\nCpf: " + cpf +
-                "\nEndereco: " + endereco*/;
+                "\nIdade: " + idade;
     }
 }

@@ -60,8 +60,8 @@ public class Tutor extends Pessoa implements FuncoesFuncionario, Funcionario {
 
     @Override
     public String toString() {
-        return super.toString() +
-                "\nFunção: Tutor" +
+        return "Tutor: \n" +
+                super.toString() +
                 "\nSalário: " + salario;
     }
 }

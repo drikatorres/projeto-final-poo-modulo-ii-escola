@@ -41,11 +41,11 @@ public class Professor extends Pessoa implements FuncoesFuncionario, Funcionario
     public void aprovarAluno(Aluno aluno) {
         if (aluno.getNota() >=7 ) {
             aluno.setAprovado(true);
-            System.out.println("O(a) aluno(a) " + aluno.getNome() + " foi aprovado");
+            System.out.println("O(a) aluno(a) " + aluno.getNome() + " foi aprovado(a).");
             System.out.println(" ");
         } else {
             aluno.setAprovado(false);
-            System.out.println("O(a) aluno(a) " + aluno.getNome() + " não foi aprovado(a) e terá que ir para a recuperação");
+            System.out.println("O(a) aluno(a) " + aluno.getNome() + " não foi aprovado(a) e terá que ir para a recuperação.");
             System.out.println(" ");
         }
     }
@@ -61,6 +61,4 @@ public class Professor extends Pessoa implements FuncoesFuncionario, Funcionario
         RH.professoresContratados.remove(funcionario);
         this.setSalario(0.0);
     }
-
-
 }

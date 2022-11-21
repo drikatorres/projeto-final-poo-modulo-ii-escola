@@ -1,6 +1,10 @@
 import Modelo.Endereco;
 import Modelo.Pessoa;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
+
 public class Aluno extends Pessoa {
     private int matricula;
     private Double nota;
@@ -60,12 +64,39 @@ public class Aluno extends Pessoa {
 
     @Override
     public String toString() {
-        return  super.toString() +
-                "\nAluno: " +
+        return  "\nAluno: " +
+                super.toString() +
                 "\nMatrícula: " + matricula +
-                "\nNota:" + nota +
-                "\nPai ou responsável:" + paiOuResponsavel.getNome() +
-                "\nAprovado:" + aprovado +
-                "\nFormado:" + formado;
+                "\nPai ou responsável:" + paiOuResponsavel.getNome();
+    }
+
+    public static class Cadastro{
+
+        static List<Aluno> alunosMatriculados = new ArrayList<>();
+
+        public void matricularAlunos (Aluno aluno, int matricula) {
+            if (Objects.nonNull(aluno) && Objects.nonNull((aluno.getPaiOuResponsavel()))) {
+                aluno.setMatricula(matricula);
+                alunosMatriculados.add(aluno);
+                System.out.println("Matricula do aluno " + aluno.getNome() + " foi realizada com sucesso.");
+                System.out.println(" ");
+            } else {
+                System.out.println("Não foi possível matricular o aluno. Por favor, verificar se foi atribuido um pai ou responsável para o aluno");
+                System.out.println(" ");
+            }
+        }
+
+        static List<PaiOuResponsavel> paiOuResponsavelCadastrado = new ArrayList<>();
+
+        public void cadastrarPaiOuResponsavel (PaiOuResponsavel paiOuResponsavel) {
+            if (Objects.nonNull(paiOuResponsavel)) {
+                paiOuResponsavelCadastrado.add(paiOuResponsavel);
+                System.out.println("Aluno.Cadastro do responsável " + paiOuResponsavel.getNome() + " foi realizado com sucesso.");
+                System.out.println(" ");
+            } else {
+                System.out.println("Não foi possível cadastrar o pai ou responsável. Por favor, verificar se todos os dados foram fornecidos.");
+                System.out.println(" ");
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@ import Modelo.Endereco;
 
 public class Escola {
     public static void main(String[] args) {
-
+        System.out.println("|------------Inicializando as atividades escolares------------|");
 
         // Endereço genérico para testes
         Endereco enderecoGenerico = new Endereco("Rua Genérica", 3, "700000000", "Generico", "MG");
@@ -59,7 +59,7 @@ public class Escola {
         secretaria.cadastro.matricularAlunos(larissa, 567);
 
         //Desligamento Funcionário
-        lucas.pedirDesligamento(lucas);
+        maria.pedirDesligamento(maria);
         jussara.pedirDesligamento(jussara);
 
         //Funcionário - consultar salário
@@ -70,28 +70,28 @@ public class Escola {
         TodosCadastros todosCadastros = new TodosCadastros();
 
         //Lista de professores contratados
-        System.out.println("|-----------Professores contratados-------|");
+        System.out.println("|------Professores com contrato ativo-----|");
         todosCadastros.mostrarLista(RH.professoresContratados);
         System.out.println("|-----------------------------------------|");
         System.out.println(" ");
 
         //Lista de tutores contratados
-        System.out.println("|--------Tutores contratados--------------|");
+        System.out.println("|------Tutores com contrato ativo---------|");
         todosCadastros.mostrarLista(RH.tutoresContratados);
         System.out.println("|-----------------------------------------|");
         System.out.println(" ");
 
         //Lista de alunos matriculados
-        /*System.out.println("|----------Alunos matriculados------------|");
-        todosCadastros.mostrarLista(Cadastro.alunosMatriculados);
+        System.out.println("|----------Alunos matriculados------------|");
+        todosCadastros.mostrarLista(Aluno.Cadastro.alunosMatriculados);
         System.out.println("|-----------------------------------------|");
         System.out.println(" ");
 
         //Lista de pais cadastrados
         System.out.println("|----Pais ou responsáveis cadastrados-----|");
-        todosCadastros.mostrarLista(Cadastro.paiOuResponsavelCadastrado);
+        todosCadastros.mostrarLista(Aluno.Cadastro.paiOuResponsavelCadastrado);
         System.out.println("|-----------------------------------------|");
-        System.out.println(" ");*/
+        System.out.println(" ");
 
         //lançar notas alunos
         lucas.lancarNota(joao, 5.0);
@@ -99,7 +99,7 @@ public class Escola {
         lucas.lancarNota(joana, 9.0);
 
         //Dar advertencia
-        lucas.darAdvertencia(larissa);
+        lucia.darAdvertencia(larissa);
 
         //ligando para o pai
         secretaria.ligarPaiOuResposanvel(larissa);
@@ -107,7 +107,7 @@ public class Escola {
         //Ajudando o aluno
         karina.ajudarAluno(larissa);
 
-        //Verificando se os alunos foram aprovados, e se foram mudando o status para aprovado
+        //Verificando se os alunos foram aprovados, e se foram, mudando o status para aprovado
         lucas.aprovarAluno(joao);
         lucas.aprovarAluno(larissa);
         lucas.aprovarAluno(joana);
@@ -116,7 +116,5 @@ public class Escola {
         secretaria.emitirDiploma(joao);
         secretaria.emitirDiploma(larissa);
         secretaria.emitirDiploma(joana);
-
-
     }
 }

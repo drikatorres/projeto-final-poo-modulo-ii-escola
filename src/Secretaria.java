@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
-
 public class Secretaria implements FuncoesFuncionario {
     @Override
     public void lancarNota(Aluno aluno, Double nota) {
@@ -47,6 +43,6 @@ public class Secretaria implements FuncoesFuncionario {
     public Secretaria() {
     }
 
-    Cadastro cadastro = new Cadastro();
+    public Aluno.Cadastro cadastro = new Aluno.Cadastro();
 
 }
